@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.once("ready", () => {
-  console.log("Bot Live");
+  console.log("Bot is Live");
 });
 
 client.on("message", (message) => {
@@ -21,7 +21,9 @@ client.on("message", (message) => {
       }
       break;
     default:
-      message.channel.send("Get in touch with author of the bot.");
+      message.channel.send(
+        "'-' is the prefix for my commands. Get in touch with @JB#9032 for more help."
+      );
   }
 });
 
