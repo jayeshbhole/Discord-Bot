@@ -8,7 +8,7 @@ client.once("ready", () => {
     .setPresence({
       activity: {
         name: "Jumping With Glee",
-        type: "STREAMING",
+        type: "PLAYING",
       },
     })
     .then(console.log)
