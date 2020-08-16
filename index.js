@@ -8,6 +8,7 @@ client.once("ready", () => {
     .setPresence({
       activity: {
         name: "Jumping With Glee",
+        type: "CUSTOM_STATUS",
       },
     })
     .then(console.log)
