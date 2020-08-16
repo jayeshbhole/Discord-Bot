@@ -4,8 +4,8 @@ const client = new Discord.Client();
 
 client.once("ready", () => {
   console.log("Bot is Live");
-  bot.user.setStatus("I'm here for your needs ;)");
-  bot.user.setPresence({
+  client.user.setStatus("I'm here for your needs ;)");
+  client.user.setPresence({
     game: {
       name: "Jumping with Glee",
       type: "STREAMING",
