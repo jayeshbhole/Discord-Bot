@@ -2,7 +2,7 @@
   "name": "mic",
   "version": "1.0.0",
   "description": "First",
-  "main": "new",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
