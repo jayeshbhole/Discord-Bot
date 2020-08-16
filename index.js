@@ -4,6 +4,14 @@ const client = new Discord.Client();
 
 client.once("ready", () => {
   console.log("Bot is Live");
+  bot.user.setStatus("I'm here for your needs ;)");
+  bot.user.setPresence({
+    game: {
+      name: "Jumping with Glee",
+      type: "STREAMING",
+      url: "https://www.eclecticiiitp.in",
+    },
+  });
 });
 
 client.on("message", (message) => {
