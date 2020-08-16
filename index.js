@@ -8,10 +8,10 @@ client.once("ready", () => {
     .setPresence({
       activity: {
         name: "Jumping With Glee",
-        type: "CUSTOM_STATUS",
-        // url: "www.eclecticiiitp.in",
+        type: 2,
+        url: "https://www.twitch.tv/jayesh2308",
       },
-      status: "idle",
+      status: "online",
     })
     .then(console.log)
     .catch(console.error);
