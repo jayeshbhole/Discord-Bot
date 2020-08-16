@@ -5,7 +5,14 @@ const client = new Discord.Client();
 client.once("ready", () => {
   console.log("Bot is Live");
   client.user
-    .setPresence({ activity: { name: "with discord.js" }, status: "idle" })
+    .setPresence({
+      activity: {
+        name: "Jumping With Glee",
+        type: "CUSTOM_STATUS",
+        url: "www.eclecticiiitp.in",
+      },
+      status: "idle",
+    })
     .then(console.log)
     .catch(console.error);
 });
