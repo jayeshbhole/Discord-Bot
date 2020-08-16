@@ -13,11 +13,11 @@ client.on("message", (message) => {
   const command = args.shift().toLowerCase();
 
   switch (command) {
-    case "boss":
+    case "hi":
       if (
-        message.member.roles.cache.find((r) => r.id === "744605702189744190")
+        message.member.roles.cache.find((r) => r.id === "546175141642633226")
       ) {
-        message.channel.send("yes newbie? whats it?.");
+        message.channel.send("yes memer? whats it?.");
       }
       break;
     default:
