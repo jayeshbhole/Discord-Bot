@@ -9,7 +9,7 @@ client.once("ready", () => {
       activity: {
         name: "Jumping With Glee",
         type: "CUSTOM_STATUS",
-        url: "www.eclecticiiitp.in",
+        // url: "www.eclecticiiitp.in",
       },
       status: "idle",
     })
