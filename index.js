@@ -4,14 +4,10 @@ const client = new Discord.Client();
 
 client.once("ready", () => {
   console.log("Bot is Live");
-  client.user.setStatus("I'm here for your needs ;)");
-  client.user.setPresence({
-    game: {
-      name: "Jumping with Glee",
-      type: "STREAMING",
-      url: "https://www.eclecticiiitp.in",
-    },
-  });
+  client.user
+    .setPresence({ activity: { name: "with discord.js" }, status: "idle" })
+    .then(console.log)
+    .catch(console.error);
 });
 
 client.on("message", (message) => {
@@ -22,9 +18,7 @@ client.on("message", (message) => {
 
   switch (command) {
     case "hi":
-      if (
-        message.member.roles.cache.find((r) => r.id === "546175141642633226")
-      ) {
+      if (message.member.roles.cache.find((r) => r.name === "test")) {
         message.channel.send("yes memer? whats it?.");
       }
       break;
