@@ -10,6 +10,7 @@ client.once("ready", () => {
         name: "Jumping With Glee",
         type: "PLAYING",
       },
+      status: "dnd",
     })
     .then(console.log)
     .catch(console.error);
