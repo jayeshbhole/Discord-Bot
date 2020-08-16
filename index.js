@@ -22,7 +22,7 @@ client.on("message", (message) => {
       break;
     default:
       message.channel.send(
-        "'-' is the prefix for my commands. Get in touch with @JB#9032 for more help."
+        "'-' is the prefix for my commands. Get in touch with <@466541354382655498> for more help."
       );
   }
 });
